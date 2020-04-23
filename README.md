@@ -15,4 +15,4 @@ Please follow along as the instructor adds automated tests to the API.
 
 - add the Heroku Postgres Add On (under settings) to the application on Heroku
 - add the "pg" npm package
-- configure the "production" property on the knexfile
+- configure the "production" property on the knexfile to use "pg" and the "proccess.env.DATABASE_URL" variable as the connection.
