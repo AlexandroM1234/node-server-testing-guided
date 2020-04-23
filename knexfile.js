@@ -25,4 +25,15 @@ module.exports = {
       directory: "./data/seeds",
     },
   },
+  // heroku will look for a production config
+  production: {
+    client: "pg",
+    connection: process.env.DATABASE_URL, // url provided by heroku
+    migrations: {
+      directory: "./data/migrations",
+    },
+    seeds: {
+      directory: "./data/seeds",
+    },
+  },
 };
